@@ -1,0 +1,6 @@
+<ul>
+    {% for item in menu_items %}
+
+        <li><a href="{% url 'view_name' slug=item.slug %}">{{ item.name }}</a></li>
+    {% endfor %}
+</ul>
